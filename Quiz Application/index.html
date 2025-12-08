@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="bg-slate-900 flex justify-center items-center min-h-screen p-4">
+        <div id="startScreen" class="text-center bg-white/5 p-6 sm:p-10 rounded-3xl w-full max-w-md">
+            <p class="text-white text-2xl sm:text-4xl mb-4">Ready to take up quiz?</p>
+            <button id="startBtn" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-full sm:w-auto">Start</button>
+        </div>
+        <div class="text-white bg-white/5 w-full max-w-xl p-4 sm:p-6 rounded-3xl hidden" id="quiz-container">
+            <p class="font-semibold text-base sm:text-md md:text-lg lg:text-xl mb-2" id="quiz">Simple JS Quiz</p>
+            <p id="qnum" class="text-base sm:text-md md:text-lg lg:text-xl text-gray-500 mb-5"></p>
+            <p id="ques" class="text-base sm:text-md md:text-lg lg:text-xl font-semibold mb-5"></p>
+            <p id="message" class="text-base sm:text-md md:text-lg lg:text-xl text-red-500 mb-3"></p>
+            <button id="option-1" class="block bg-white/20 w-full p-3 rounded-2xl mb-2 hover:bg-white/30 transition"></button>
+            <button id="option-2" class="block bg-white/20 w-full p-3 rounded-2xl mb-2 hover:bg-white/30 transition"></button>
+            <button id="option-3" class="block bg-white/20 w-full p-3 rounded-2xl mb-2 hover:bg-white/30 transition"></button>
+            <button id="option-4" class="block bg-white/20 w-full p-3 rounded-2xl mb-2 hover:bg-white/30 transition"></button>
+            <div class="flex justify-end">
+                <button id="nextBtn" class="mt-3 bg-green-700 text-blue-950 font-bold py-2 px-4 rounded-full">Next</button>
+            </div>
+        </div>
+        <div id="resultScreen" class="text-center bg-white/5 p-6 sm:p-10 rounded-3xl w-full max-w-md hidden">
+            <p id="result" class="text-white text-2xl sm:text-4xl mb-4"></p>
+            <button id="restartBtn" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition w-full sm:w-auto">Restart Quiz</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+    
